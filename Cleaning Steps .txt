@@ -1,0 +1,68 @@
+             # Columns Dropped
+
+
+1- Agent   ---->    The Col Has 12000 Null And it's a ID and has 300 unique values and i have already dropped 32000 duplicated ones
+
+2- Company ---->    The Col contains like 112000 null cells before dropping duplicated rows
+
+3- Reservation Status ------> It's The Same as is canceled so the model won't learn anything
+
+4- Reservation Status Date ------> The model will know the answer from the difference between the arrival date and the reservation date
+
+
+
+
+----> Dropped Duplicated Rows ARE Close to 32000 before any drop in cols
+
+
+
+
+             # Fill Null
+
+
+1- Children
+
+2- Country
+
+
+	     # Replace Undefined
+
+
+1- Meal
+
+2- Market segment
+
+3- Distribution channel
+
+
+
+             #Outliers Treatment
+
+
+1- Lead time     capped at 360 i think
+
+2- Adults      capped to [ 1 : 4 ]
+
+3- Children    capped t0 [ 0 : 3 ]
+
+4- Babies      capped to [ 0 : 2 ]
+
+5- Previous cancellations    capped to [ 0 : 6 ]  
+
+6- ADR          capped to [ 0 : 227(upper bound) ]
+
+capped the unbelievable numbers
+
+
+
+
+
+              # DATA TYPE CHANGES
+
+1- Children from float to int
+
+
+              #Encoding
+
+1- Deposit Type
+
